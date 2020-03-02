@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue demo</title>
+</head>
+
+<body>
+    <div id="app">
+        <input v-model="message.a" type="text">
+        <p>{{ message.a }}</p>
+    </div>
+
+    <script src="./core/compiler.js"></script>
+    <script src="./core/observer.js"></script>
+    <script src="./core/watcher.js"></script>
+    <script src="./core/index.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                message: {
+                    a: 'life is not easy,we are just to be stronger!'
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
